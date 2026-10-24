@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.matthiasbroske.gpustablefluids": {
+      "version": "file:com.matthiasbroske.gpustablefluids",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "14.0.8"
+      }
+    },
     "com.unity.burst": {
       "version": "1.8.4",
       "depth": 1,
@@ -118,9 +126,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.director": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.com"

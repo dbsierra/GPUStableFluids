@@ -1,0 +1,16 @@
+{
+  "name": "com.matthiasbroske.gpustablefluids",
+  "displayName": "GPU Stable Fluids",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "2D and 3D GPU implementations of Jos Stam's Stable Fluids using compute shaders, with a raymarched volume shader for the 3D fluid. Includes 2D and 3D demo scenes.",
+  "author": {
+    "name": "Matthias Broske",
+    "url": "https://github.com/matthiasbroske/GPUStableFluids"
+  },
+  "license": "MIT",
+  "keywords": ["fluid", "stable fluids", "compute shader", "simulation"],
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "14.0.8"
+  }
+}

@@ -12,17 +12,19 @@
 
 ## About
 2D and 3D GPU implementations of Jos Stam's infamous [Stable Fluids](https://pages.cs.wisc.edu/~chaol/data/cs777/stam-stable_fluids.pdf) paper using compute shaders in Unity. 
-- For the 2D implementation see [`StableFluids2D.cs`](Assets/Scripts/Stable%20Fluids/StableFluids2D.cs) and [`StableFluids2D.compute`](Assets/Compute/StableFluids2D.compute).
-- For the 3D implementation see [`StableFluids3D.cs`](Assets/Scripts/Stable%20Fluids/StableFluids3D.cs) and [`StableFluids3D.compute`](Assets/Compute/StableFluids3D.compute), as well as [`Volume.shader`](Assets/Shaders/Volume.shader) for the custom shader responsible for volume rendering the 3D fluid.
+- For the 2D implementation see [`StableFluids2D.cs`](Packages/com.matthiasbroske.gpustablefluids/Runtime/Scripts/StableFluids2D.cs) and [`StableFluids2D.compute`](Packages/com.matthiasbroske.gpustablefluids/Runtime/Compute/StableFluids2D.compute).
+- For the 3D implementation see [`StableFluids3D.cs`](Packages/com.matthiasbroske.gpustablefluids/Runtime/Scripts/StableFluids3D.cs) and [`StableFluids3D.compute`](Packages/com.matthiasbroske.gpustablefluids/Runtime/Compute/StableFluids3D.compute), as well as [`Volume.shader`](Packages/com.matthiasbroske.gpustablefluids/Runtime/Shaders/Volume.shader) for the custom shader responsible for volume rendering the 3D fluid.
 
 ## Usage
-Download this repository, open with Unity 2022.3 or later, and proceed to either of the two demo scenes in the `Assets/Scenes` folder. The scenes and their respective controls are as follows:
-#### `Assets/Scenes/2D Stable Fluids`
+Everything lives in the embedded package [`com.matthiasbroske.gpustablefluids`](Packages/com.matthiasbroske.gpustablefluids) (assembly `MatthiasBroske.GPUStableFluids`). To use it in another project, copy that folder into the project's `Packages/` folder or reference it with a `file:` path in `Packages/manifest.json`.
+
+Download this repository, open with Unity 2022.3 or later, and proceed to either of the two demo scenes in the `Packages/com.matthiasbroske.gpustablefluids/Runtime/Demo/Scenes` folder. The scenes and their respective controls are as follows:
+#### `Demo/Scenes/2D Stable Fluids`
 2D Stable Fluids simulation rendered directly to the screen.
 - **Left Click**: Stir fluid
 - **Right Click**: Add dye
 - **R**: Reset simulation
-#### `Assets/Scenes/3D Stable Fluids`
+#### `Demo/Scenes/3D Stable Fluids`
 3D Stable Fluids simulation rendered inside the bounds of a cube.
 - **Left Click**: Rotate camera
 - **Right Click**: Zoom camera
